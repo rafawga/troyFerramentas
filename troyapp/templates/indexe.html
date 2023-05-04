@@ -1,0 +1,57 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Troy Ferramentas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand " href="#">
+          <img src="{% static 'img/LOGO.png'%}" alt="Logo" width="75" height="30" class="d-inline-block align-text-top">
+          Troy Ferramentas
+        </a>
+      </div>
+    <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="#">HOME</a>
+          <a class="nav-link active" href="#">CONTATO</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<body>
+    <div class="conteudo">
+        <div class="cardboot">
+            <div class="row row-cols-1 row-cols-md-5 g-5">
+                {%if chave%}
+                {% for ferramentasinfo in chave%}
+                <div class="col">
+                <div class="card h-100 text-center">
+                    <img src="{% static 'img/ferramenta.png' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">{{ferramentasinfo.nome}}</h5>
+                    <p class="card-text">Esta Ferramenta é possui uma pastilha {{ferramentasinfo.geometria}} feita de {{ferramentainfo.material}}, com raio de {{ferramentasinfo.raio}}mm, com uma vida útil de {{ferramentasinfo.vida}} horas de usinagem </p>
+                    <a href="{% url 'ferramenta'%}" class="btn btn-primary ">Ver detalhes</a>
+                    </div>
+                </div>
+                </div>
+                {% endfor %}
+                {%else%}
+                {%endif%}
+            </div>
+        </div>
+    </div>
+    
+
+
+
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js">
+</body>
+</html>

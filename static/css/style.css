@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+}
+.menu{
+    background-color: #12132d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lista-elementos{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-right: 20px;
+    font-size: 12pt;
+    font-family: 'Muli';
+}
+
+.elementos{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    list-style-type: none;
+    cursor: pointer;
+    border-right: solid 1px rgb(192, 192, 192);
+    
+}
+
+.elementos:hover{
+    background-color: #27295e;
+    font-size: 14pt;
+}
+
+.logo{
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.logo-logo{
+    width: 130px;
+}
+
+/*  Opções  */
+.opcoes{
+    list-style-type: none;
+    width: 93vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.opcao{
+    margin: 20px;
+}
+.imagem{
+    border: 5px solid rgb(39, 41, 94);
+    box-shadow: 7px 7px 10px rgb(23, 24, 58);
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+}
+
+.box:hover .imagem{
+    width: 200px;
+    height: 200px;
+}
+
+.texto{
+    padding-top: 10px;
+    font-family: 'Muli';
+    font-size: 16pt;
+    display: flex;
+    justify-content: center;
+}
+
+.box:hover .texto{
+    font-size: 23pt;
+    font-weight: bold;
+}
+
+/* Section*/
+
+.nomes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.comparador{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.troy{
+    padding: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: solid 5px rgb(39, 41, 94);
+    box-shadow: 10px 10px 10px rgb(23, 24, 58);
+}
+.atual{
+    padding: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border: solid 5px rgb(39, 41, 94);
+    box-shadow: 10px 10px 10px rgb(23, 24, 58);
+}
+.inputs{
+    display: flex;
+    padding-bottom: 10px;
+    flex-direction: row;
+    align-items: flex-end;
+    font-size: 9pt;
+    font-style: italic;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+}
+.botaozin{
+    font-size: 15pt;
+    background-color: #07081b;
+    border-radius: 25px;
+    border-color: rgb(23, 24, 58);
+    color: white;
+    border-color: black;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.inputs_dentro{
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(39, 41, 94);
+    height: 20px;
+    width: 200px;display: flex;
+    margin: 0px;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+h2{
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+.titulo{
+    padding-bottom: 20px;
+}
